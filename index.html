@@ -1,0 +1,318 @@
+<!-- Created by Amardeep kesharwani -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="author" content="Amardeep Kesharwani">
+
+
+<title>Story Book</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<link href="index.css" rel="stylesheet" >
+<body>
+<section class="intro">
+ <div class="img-box" >
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8twO01M8ZmG7JHIh14yZvmTOpTDcsbqPCVg&usqp=CAU" >
+ </div>
+ <div>
+  <h1>Story Book</h1>
+  <p>Read success stories of great people, learn and share your own motivational stories and inspire citation from the whole world.
+  </p>
+  <button class="btn start-btn" >Start</button>
+ </div>
+</section>
+<main class="main hide" >
+  <!-- <header class="header" >
+    <div class="header-content" >
+      <h1>Story Book</h1>
+      <p>Created by Amardeep Kesharwani</p>
+    </div>
+  </header> -->
+  <div class="fragment home show">
+    <h2 class="list-title" >Top Stories</h2>
+    <section class="book-list" >
+    </section>
+  </div>
+  <div class="fragment bookmark" >
+    <h2 class="list-title" >Wishlist</h2>
+    <section class="wish-list" >
+    </section>
+  </div>
+  <div class="fragment about" >
+    <h2 class="list-title" >About App</h2>
+    <section>
+    <div class="img-box" >
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQb4_MB7BSAnP2el03DrCOu06ObEno6bFUEpA&usqp=CAU" alt=""  >
+    </div>
+    <p> Whether you are preparing for epic or dream of a improved job, success story motivation to work to your goals is amazing that evades us all from time to time. Story book in english for children However, approaching through those low points is essential to ensuring success. To help stay motivated to realize your dreams, look into our top inspirational stories to self control.</p>
+    <p>Read on to find the words of wisdom that will inspire your mind motivate your intelligence in structure your business, most important your life, creating success, achieving your goals, and overcoming your doubts</p>
+    <p>Story Book is a popular short story app, with a collection of inspirational stories that encourage us to seek for our dreams and never give up, teach us to notice the magical beauty of life, help to find the true values that are worth aiming for, tell about God‘s caring.</p>
+    <h3>About myself</h3>
+    <blockquote>
+      "Hello, my name Is Vishal. I am 21 years old, from Mirzapur UP, i'm a full stack web developer"
+    <!-- don't change & remove this line -->
+    </blockquote>
+    <h3>My skills and knowledge</h3>
+    <br>
+    <p>
+     Html, css, bootstrap, materialize.css, JavaScript, jQuery,
+     React.js, Vue.js, Vuetify, Nuxt.js, AMP, different type Js libraries,
+     different type of icons, Node.js , Express, NPM, Deno, API, PHP, Codeigniter, Laravel,
+     WordPress, WordPress Theme Development, Elementor, SQL, MySQL DB, mongoDB, etc...
+    </p>
+    
+    <p>
+     Tally, Accounting, Marketing, business management, 
+     company management, banking, business economics,
+     different types of account , final account, cost accounting , 
+     financial accounting, and much more 
+    </p>
+   </section>
+  </div>
+  <footer class="footer" >
+   <button class="home-btn" >
+    <span class="material-icons" >home</span>
+    <h4>Home</h4>
+   </button>
+   <button class="bookmark-btn">
+   <span class="material-icons" >bookmark</span>
+   <h4>Bookmark</h4>
+   </button>
+   <button class="about-btn">
+    <span class="material-icons" >info</span>
+    <h4>About</h4>
+   </button>
+  </footer>
+</main>
+<div class="stories">
+  <div>
+    <div class="story__header" >
+      <span class="close material-icons" >arrow_back</span>
+      <div class="img">
+        <img id="img" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT4mW5yMFfh9dIDHWhvlYH6__N4JjE0b4ylmw&usqp=CAU" >
+      </div>
+      <h1 class="title" >Amardeep Kesharwani</h1>
+      <p>Author : <span class="book-author" >Story Book</span></p>
+      <div class="action" >
+        <span class="material-icons like">favorite</span>
+        <span class="material-icons add-bookmark" >bookmark</span>
+        <span class="material-icons dark-mode" >visibility</span>
+      </div>
+    </div>
+    <div class="view-like">
+      <p>Likes : <span class="likes" >638</span> </p>  
+      <p>Reading : <span class="reading" >2k</span> </p>
+    </div>
+    <div class="content">
+    </div>
+    <div class="story__footer" >
+      <button class="btn prev-btn" >Prev</button>
+      <button class="btn close" >Close</button>
+      <button class="btn next-btn" >Next</button>     
+    </div>
+  </div>
+</div>
+<div class="toast" ></div>
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+const stories = [
+ {
+  id:1,
+  title:"Rimjhim",
+  thumbnail:"https://avatars.sololearn.com/1398d8f6-0b45-402f-865a-e62a116d6b9d.jpg",
+  like:789,
+  reading:"8k",
+  author:"Rimjhim 🌧️",
+  wishlist:false,
+  story:`
+  <h2>A Friend</h2>
+  <p>I'd Never gave much thought while writing this story ,it is more like a description of a friend.but since I decided to write one let's go with the flow and see how it turns out. </p>
+  <p>What's is one of the biggest arising problem of our society? Everyone would have different thoughts about this, but for me the answer will be depression and anxiety. And also because you don't know how a person feels ,thinks and going through. Overcoming it is the biggest achievement you could ever have.</p>
+  <p>I met that person not too long ago. But we became really good friends. And having good and trustworthy friend is what you all need.</p>
+  <p> Finding a true friend feels like a gift that keeps on giving, even when they are thousands of miles away. Through stressful classes, figuring out a career and whenever you are stuck in something  your best friends have been there. And yes,</p>
+  <p> when you got those bangs you shouldn’t have tried in the first place, they consoled you. Whether you’re celebrating life or happen to experience an unexpected bump, you can always rely on your friends to be there for you. A listening ear, a shoulder to cry on, or finding the silver lining in a less than ideal situation — all of it means the world to you simply knowing you have your friends supporting you every step of the way.<br/>
+   Anything is possible when you have the right people there to support you. Share your smile with the world.</p>
+  <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpMPYr6_CesH-1j6d5y3Dw04qgvEEG-IC5PQ&usqp=CAU' alt="" />
+  <p>Whenever I would see him he would always seem happy, cheerful and a carefree soul. He always like to help others and feels really happy to do so. Whoever asks him to anything he would do it happily. He is really good friend like  whom everyone wants to have one. A friend on whom you can always rely on and who is always there for you.</p> 
+  <p><i>You may look happy to others.
+ may laugh at jokes, dance with others, sing along to songs, but inside, you still feel sad. Internally, you still feel lifeless.</i></p>
+  <p> But we don't know what a person thinks and what he/ she is going through . We can only see what they show us. And all things can't be told </p>
+  <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR6j12QRulOa29IgE92OyceXmk33XDD5msqIQ&usqp=CAU' alt=""/>
+  <p><i>The prettiest smile hides the deepest secrets. The prettiest eyes have cried the most tears. And the kindest heart have felt the most pain</i> </p>
+  <p> And  still if someone helps others selflessly in such situation and just want to be happy for them is really a great thing. Even if people don't tell you everything , they are going through a lot. They hide all the things </p>
+  <p> Even if people don't tell you everything , they are going through a lot. They hide all the things from because they don't want to envolve you in anything and just want you to be happy. </p>
+  <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTrlR8x9U3mt7e0KpI0u_L8ZQ4wyZvltCYxbQ&usqp=CAU' alt="" />
+  <p>Whenever I used to see him I knew he was going through alot but he was still trying to be happy in front of others. And it requires alot. Everyone just need someone to share everything and talk to. Someone who understand them, trust them and can be with you everytime even if no one does. And a best friend is all you need .</p>
+  <p><i>Sometimes when I say “I’m OK”, I need someone to look me in the eyes, hug me tight and say “I know you are not"</i></p>
+  <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcThKX7uskD90cw6DGqiWM3pRwIyTPdrvVd4-w&usqp=CAU' alt="" />
+  <p>A friend always help you to overcome loneliness and depression.I really admire my friend. However he is, he is still the best. His kind, polite, sweet , caring and stupid personality.</p>
+  <p> He has all what you want to have in your friend. Even if he doesn't top the class and isn't the favorite student of all the teachers in school. He is still the most intelligent student who just loves to gain knowledge and marks doesn't matter to him. He likes talking to people who is close to him and can talk to them all day long.And he would do everything for them. And he is still the best even if he doesn't think so. He don't know how good he is. And he truly values friendship</p>
+  <p>I just wish him that he always stay happy because he deserves to be. And I hope he really becomes selfish one day.and He will always be my "Bevkuf" ,"Ullu" And "Na layak" Friend.</p>
+  <a href="https://www.sololearn.com/Profile/14931694/?ref=app">Follow</a>
+  `,
+  },
+//   
+];
+
+let index = 1;
+let story = {};
+let ath, dn;
+$(document).ready(function (){
+ $(".home-btn").click(function(){
+  $(".bookmark, .about").hide();
+  $(".home").fadeIn()
+ });
+ $(".bookmark-btn").click(function(){
+   $(".home, .about").hide();
+   $(".bookmark").fadeIn();
+   setBookMark();
+ });
+ $(".about-btn").click(function(){
+   $(".home,.bookmark").hide();
+   $(".about").fadeIn()
+ });
+ $(".book").click(function(){
+  index = $(this).attr("data-id");
+  story = stories.find(s => s.id == index);
+  openStory();
+ });
+ $(".close").click(function(){
+  $(".stories").removeClass("show");
+  $(".main").show();
+  setTimeout(() =>$(".stories").hide(),1000);
+ })
+ $(".dark-mode").click(function(){
+   $(".stories").toggleClass("dark");
+   $(this).toggleClass('red');
+ })
+ $(".start-btn").click(function(){
+  checkAuth()
+  $(".intro").fadeOut();
+  $(".main").fadeIn();
+ });
+ $('.like').click(function(){
+  if(story.liked) {
+   $(this).removeClass('red');
+   story.liked = false;
+   story.like--
+   $(".likes").text(story.like);
+   makeToast("remove like");
+   return;
+  } 
+  $(this).addClass('red');
+  story.liked = true;
+  story.like++
+  $(".likes").text(story.like);
+  makeToast("like this book")
+ })
+ $('.add-bookmark').click(function(){
+  if(story.wishlist) {
+   $(this).removeClass('red');
+   story.wishlist = false;
+   makeToast('remove wishlist')
+   return;
+  } 
+  $(this).addClass('red');
+  story.wishlist = true;
+  makeToast('add wishlist')
+ })
+ $('.next-btn').click(function(){
+  index++
+  if(index > stories.length) {
+   index = 1;
+  }
+  story = stories.find(s => s.id == index);
+  openStory();
+  makeToast('Next Story')
+ })
+ $('.prev-btn').click(function(){
+  index--
+   if(index == 0) {
+   index = stories.length
+  }
+  story = stories.find(s => s.id == index);
+  openStory();
+  makeToast('Previous Story')
+ })
+});
+function setBookMark() {
+ $(".wish-list").html("");
+ stories.forEach(story => {
+  if(story.wishlist) {
+    addWishlistBook(story);
+  }
+ })
+}
+function openStory() {
+ $(".stories").show()
+ setTimeout(() => $(".stories").addClass("show"),$(".main").hide(),100);
+ $("#img").attr("src",story.thumbnail);
+ $(".title").text(story.title);
+ $(".book-author").text(story.author);
+ $(".likes").text(story.like);
+ $(".reading").text(story.reading);
+ $(".content").html(story.story)
+ $(".like").removeClass("red")
+ $('.add-bookmark').removeClass('red');
+ if(story.wishlist) {
+  $('.add-bookmark').addClass('red');
+ }
+ if(story.liked) {
+  $(".like").addClass("red")
+ } 
+ $(".stories").scrollTop(0);
+}
+ath =  $("meta[name='author']").attr("content");
+
+function setBook() {
+ stories.forEach(book => addBook(book));
+}
+
+function addBook(book) {
+ const div = `
+  <div class="book" data-id="${book.id}">
+  <div class="book__thumbnail" >
+  <img src="${book.thumbnail}" alt="">
+  </div>
+  <p>${book.title}</p>
+  </div>
+ `;
+ $('.book-list').append(div);
+}
+dn = "Amardeep Kesharwani";
+function addWishlistBook(book) {
+ const div = `
+ <div class="book wish" data-id="${book.id}">
+ <div class="book__thumbnail" >
+ <img src="${book.thumbnail}" alt="">
+ </div>
+ <p>${book.title}</p>
+ </div>
+ `;
+ $('.wish-list').append(div);
+ $(".wish").click(function() {
+   index = $(this).attr("data-id");
+   story = stories.find(s => s.id == index);
+   openStory();
+ })
+}
+function checkAuth() {
+ if(ath !== dn) {
+  $("body").hide();
+ }
+}
+function makeToast(msg) {
+ $('.toast').fadeIn();
+ $('.toast').text(msg);
+ setTimeout(() => $('.toast').fadeOut(),2500);
+}
+setBook()
+
+</script>
+</body>
+</html>
